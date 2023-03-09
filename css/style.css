@@ -1,0 +1,71 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 98vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: hsl(30deg, 38%, 92%);
+}
+
+.section {
+  width: 335px;
+  height: 500px;
+}
+.section__photo {
+  background-image: url(../images/image-product-desktop.jpg);
+  background-size: cover;
+}
+.section__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 30px;
+  background-color: hsl(0deg, 0%, 100%);
+  font-family: "Montserrat", sans-serif;
+}
+.section__info p {
+  margin-top: 0;
+  font-size: 14px;
+}
+.section__info .tag {
+  text-transform: uppercase;
+  color: hsl(228deg, 12%, 48%);
+  letter-spacing: 2px;
+}
+.section__info h1 {
+  font-family: "Fraunces", serif;
+  text-align: center;
+}
+.section__info button {
+  padding: 15px 0;
+  background-color: hsl(158deg, 36%, 37%);
+  font-size: 15px;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 100%);
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,55 @@
+html {
+	box-sizing: border-box;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+.container {
+	display: flex;
+	height: 98vh;
+	justify-content: center;
+	align-items: center;
+	background: hsl(30, 38%, 92%);
+}
+.section {
+	width: 335px;
+	height: 500px;
+	&__photo {
+		background-image: url(../images/image-product-desktop.jpg);
+		background-size: cover;
+	}
+	&__info {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		padding: 30px;
+		background-color: hsl(0, 0%, 100%);
+		font-family: 'Montserrat', sans-serif;
+		p {
+			margin-top: 0;
+			font-size: 14px;
+		}
+		.tag {
+			text-transform: uppercase;
+			color: hsl(228, 12%, 48%);
+			letter-spacing: 2px;
+		}
+		h1 {
+			font-family: 'Fraunces', serif;
+			text-align: center;
+		}
+		button {
+			padding: 15px 0;
+			background-color: hsl(158, 36%, 37%);
+			font-size: 15px;
+			font-weight: 700;
+			color: hsl(0, 0%, 100%);
+		}
+	}
+}
