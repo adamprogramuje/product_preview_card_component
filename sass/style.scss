@@ -10,12 +10,14 @@ html {
 *::after {
 	box-sizing: inherit;
 }
+body{
+	background: hsl(30, 38%, 92%);
+}
 .container {
 	display: flex;
 	height: 98vh;
 	justify-content: center;
 	align-items: center;
-	background: hsl(30, 38%, 92%);
 }
 .section {
 	width: 33.5rem;
@@ -89,4 +91,26 @@ html {
 			background-color:  hsl(212, 21%, 14%);
 		}
 	}
+}
+@media (max-width: 768px) {
+
+	.container{
+		flex-direction: column;
+		margin: auto;
+		min-width: 42rem;
+	}
+	.section {
+		width: 40rem;
+		&__photo {
+			height: 25rem;
+			background-image: url(../images/image-product-mobile.jpg);
+			background-size: cover;
+			
+			}
+			&__info {
+				height: 40rem;
+				padding: 2rem 3.9rem;
+			}
+		}
+	
 }
