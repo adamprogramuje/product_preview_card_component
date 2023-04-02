@@ -26,6 +26,11 @@ body{
 		background-image: url(../images/image-product-desktop.jpg);
 		background-size: cover;
 		border-radius: 1rem 0 0 1rem;
+
+		.alt-img{
+			z-index: -100;
+			color: transparent;
+		}
 	}
 	&__info {
 		display: flex;
@@ -97,7 +102,7 @@ body{
 	.container{
 		flex-direction: column;
 		margin: auto;
-		min-width: 42rem;
+		// min-width: 42rem;
 	}
 	.section {
 		width: 40rem;
@@ -105,11 +110,13 @@ body{
 			height: 25rem;
 			background-image: url(../images/image-product-mobile.jpg);
 			background-size: cover;
+			border-radius: 1rem 1rem 0 0;
 			
 			}
 			&__info {
 				height: 40rem;
 				padding: 2rem 3.9rem;
+				border-radius: 0 0 1rem 1rem;
 			}
 		}
 	

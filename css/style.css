@@ -31,6 +31,10 @@ body {
   background-size: cover;
   border-radius: 1rem 0 0 1rem;
 }
+.section__photo .alt-img {
+  z-index: -100;
+  color: transparent;
+}
 .section__info {
   display: flex;
   flex-direction: column;
@@ -97,7 +101,6 @@ body {
   .container {
     flex-direction: column;
     margin: auto;
-    min-width: 42rem;
   }
   .section {
     width: 40rem;
@@ -106,9 +109,11 @@ body {
     height: 25rem;
     background-image: url(../images/image-product-mobile.jpg);
     background-size: cover;
+    border-radius: 1rem 1rem 0 0;
   }
   .section__info {
     height: 40rem;
     padding: 2rem 3.9rem;
+    border-radius: 0 0 1rem 1rem;
   }
 }
